@@ -1,0 +1,16 @@
+{
+  "title": "Jupyter VoiceCell",
+  "description": "Settings for Jupyter VoiceCell.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false,
+  "jupyter.lab.toolbars": {
+    "Notebook": [
+      {
+        "name": "voicecell-button",
+        "command": "voicecell:record-note",
+        "rank": 100
+      }
+    ]
+  }
+}

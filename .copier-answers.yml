@@ -1,0 +1,18 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.6.1
+_src_path: https://github.com/jupyterlab/extension-template
+advanced: false
+author_email: m.yahyakamran48@gmail.com
+author_name: Muhammad Yahya Kamran
+create_claude_symlink: true
+create_gemini_symlink: true
+has_ai_rules: true
+has_binder: false
+has_settings: false
+kind: frontend
+labextension_name: voicecell
+project_short_description: Voice comments for Jupyter notebook cells.
+python_name: voicecell
+repository: https://github.com/Yahya-Kamran/voicecell
+test: false
+
