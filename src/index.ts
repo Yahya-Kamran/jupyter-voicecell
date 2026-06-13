@@ -323,9 +323,9 @@ const plugin: JupyterFrontEndPlugin<void> = {
         const noteLines = new Map<number, { shortId: string; displayName: string }>();
         lines.forEach((lineText, idx) => {
           // New format: # 🔊 vm_1 [1781167798084]
-          const match = lineText.match(/# 🔊 (vm_\d+) \[(\d+)\]/);
+          const match = lineText.match(/# 🔊 ([\w_]+) \[(\d+)\]/);
           // Old full filename format for backwards compat
-          const oldMatch = lineText.match(/# 🔊 (vm_\d+) \[([^\]]+\.webm)\]/);
+          const oldMatch = lineText.match(/# 🔊 ([\w_]+) \[([^\]]+\.webm)\]/);
           if (match) {
             noteLines.set(idx, { displayName: match[1], shortId: match[2] });
           } else if (oldMatch) {
